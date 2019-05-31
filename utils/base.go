@@ -3,5 +3,9 @@ package utils
 import "log"
 
 type Base struct {
-	*log.Logger
+
+}
+
+func (base *Base) Log(v interface{}) {
+	log.Println(v)
 }
